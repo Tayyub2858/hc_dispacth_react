@@ -1,24 +1,33 @@
-import logo from './logo.svg';
+
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
+import ContactInfo from './Components/Contact_info/ContactInfo';
+import Footer from './Components/Footer/Footer';
+import Header from './Components/Header/Header';
+import Landing_page from './Pages/Landing_Page/Landing_page';
+import About from './Pages/About/About';
+import Services from './Pages/Services/Services';
+import CpmCalculator from './Pages/CPM_Calculator/CpmCalculator';
+import CarrierSetup from './Pages/Carrier_Setup/CarrierSetup';
+import Contact from './Pages/Contact_us/Contact';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Landing_page/>} />
+          <Route path='/about' element={<About />} />
+          <Route path='/services' element={<Services/>}/>
+          <Route path='/carriersetup' element={<CarrierSetup/>}/>
+          <Route path='/cpm_calculater' element={<CpmCalculator/>}/>
+          <Route path='/contact' element={<Contact/>}/>
+        </Routes>
+      </BrowserRouter>
+      <ContactInfo />
+      <Footer />
+    </>
   );
 }
 
