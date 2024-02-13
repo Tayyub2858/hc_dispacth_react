@@ -37,9 +37,9 @@ function Header() {
 
                     </div>
                     {/* <!--side menu open button--> */}
-                    <a className="d-inline-block sidemenu_btn" id="sidemenu_toggle">
+                    <span className="d-inline-block sidemenu_btn" id="sidemenu_toggle">
                         <span className="bg-dark"></span> <span className="bg-dark"></span> <span className="bg-dark"></span>
-                    </a>
+                    </span>
                 </nav>
                 {/* <!-- side menu --> */}
                 <div className="side-menu opacity-0 gradient-bg">
