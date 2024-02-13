@@ -5,7 +5,7 @@ import Numbers from '../../Components/Numbers/Numbers'
 import GettingIcons from '../../Components/GettingIcons/GettingIcons'
 import Speacilize from '../../Components/Speacilize/Speacilize'
 
-function Landing_page() {
+function LandingPage() {
   return (
     <div>
       <Carasole/>
@@ -17,4 +17,4 @@ function Landing_page() {
   )
 }
 
-export default Landing_page
+export default LandingPage
